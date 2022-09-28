@@ -67,4 +67,4 @@ function reverse(nums) {
     }
   }
   
-  console.log(Palindrome(23))
+  console.log(Palindrome(33))
