@@ -15,3 +15,5 @@ for(let [start, end] of intervals) {
 }
 return result;
  }
+
+ console.log(merge( ["h","e","l","l","o"]))

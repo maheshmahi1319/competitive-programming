@@ -57,4 +57,4 @@ function areBracketsBalanced(expr)
     }
 }
 
-areBracketsBalanced("(([{}])")
+areBracketsBalanced("([{}])")
