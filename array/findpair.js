@@ -1,5 +1,5 @@
-function findPairs(nums) {
-    const targetSum = 6;
+function findPairs(nums,sum) {
+    const targetSum = sum;
     const pairs = [];
     const complements = new Set();
   
@@ -17,7 +17,9 @@ function findPairs(nums) {
   }
   
   const nums = [1, 2, 3, 4, 5];
-  const pairs = findPairs(nums);
+  const sum = 6
+
+  const pairs = findPairs(nums,sum);
   
   console.log(pairs);
   
