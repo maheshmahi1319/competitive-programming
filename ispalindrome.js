@@ -22,3 +22,29 @@ function checkPalindrome(string) {
     return 'It is a palindrome';
 }
 console.log(checkPalindrome(100))
+
+function isPalindrome(str) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  
+    let left = 0;
+    let right = cleanedStr.length - 1;
+  
+    while (left < right) {
+      if (cleanedStr[left] !== cleanedStr[right]) {
+        return false; // Characters don't match, not a palindrome
+      }
+      left++;
+      right--;
+    }
+  
+    return true; // All characters match, it's a palindrome
+  }
+  
+  // Example usage:
+  const string1 = "level";
+  console.log(isPalindrome(string1)); // Output: true
+  
+  const string2 = "Hello";
+  console.log(isPalindrome(string2)); // Output: false
+  

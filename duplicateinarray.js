@@ -11,3 +11,22 @@ return arr.filter((ele, index, array) => {
 });
 }
 console.log(findDuplicate([1, 2, 3, 4, 5, 5]))
+
+function hasDuplicates(array) {
+    const uniqueValues = new Set();
+    for (let i = 0; i < array.length; i++) {
+      if (uniqueValues.has(array[i])) {
+        return true; // Duplicate found
+      }
+      uniqueValues.add(array[i]);
+    }
+    return false; // No duplicates found
+  }
+  
+  // Example usage:
+  const myArray = [1, 2, 3, 4, 5, 2]; // Contains a duplicate value: 2
+  console.log(hasDuplicates(myArray)); // Output: true
+  
+  const anotherArray = [7, 8, 9, 10]; // No duplicates
+  console.log(hasDuplicates(anotherArray)); // Output: false
+  
